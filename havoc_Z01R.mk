@@ -22,14 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 # Inherit from Z01R device
 $(call inherit-product, device/asus/Z01R/device.mk)
 
-# Inherit some common Evo stuff.
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_BOOT_ANIMATION_RES_EVO := true
-TARGET_GAPPS_ARCH := arm64
-CUSTOM_BUILD_TYPE := OFFICIAL
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
+# Inherit some common Havoc stuff.
 $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := Z01R
@@ -48,3 +41,6 @@ TARGET_VENDOR_DEVICE_NAME := Z01R
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=ASUS_Z01R_1 \
     PRODUCT_NAME=Z01R
+
+# Official
+export HAVOC_BUILD_TYPE=Official
