@@ -30,11 +30,11 @@ CUSTOM_BUILD_TYPE := OFFICIAL
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCLUDE_WIFI_EXT := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := Z01R
 PRODUCT_MANUFACTURER := Asus
-PRODUCT_NAME := aosp_Z01R
+PRODUCT_NAME := havoc_Z01R
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
