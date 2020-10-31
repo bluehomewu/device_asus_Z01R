@@ -22,8 +22,6 @@ allow system_app sysfs_fcharge:file { open read getattr write };
 allow system_app sysfs_tbrightness:file { open getattr write };
 allow system_app spectrum_prop:property_service set;
 allow system_app sysfs_fps:file rw_file_perms;
-<<<<<<< HEAD
-=======
 allow system_app boosts_prop:property_service set;
 allow system_app sysfs_touchboost:file { open read getattr write };
 allow system_app sysfs_msm_perf:dir { search };
@@ -38,4 +36,3 @@ set_prop(system_app, theme_prop)
 # GPU/CPU Boosts
 set_prop(system_app, boosts_prop);
 get_prop(system_app, boosts_prop);
->>>>>>> b2888468... X01BD: ZenParts: Add GPU and CPU Boosts
